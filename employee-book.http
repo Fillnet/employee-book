@@ -1,0 +1,64 @@
+###Получение всех сотрудников
+GET http://localhost:8080/employee
+###Создание сотрудника 1
+POST http://localhost:8080/employee
+Content-Type: application/json
+
+{
+  "id": "1",
+  "firstName": "Test1",
+  "lastName": "Test1",
+  "department": "1",
+  "salary": 70000
+}
+
+###Создание сотрудника 2
+POST http://localhost:8080/employee
+Content-Type: application/json
+
+{
+  "id": "2",
+  "firstName": "Test2",
+  "lastName": "Test2",
+  "department": "2",
+  "salary": 15000
+}
+
+###Создание сотрудника 3
+POST http://localhost:8080/employee
+Content-Type: application/json
+
+{
+  "id": "3",
+  "firstName": "Test3",
+  "lastName": "Test3",
+  "department": "1",
+  "salary": 70000
+}
+
+###Создание сотрудника 4
+POST http://localhost:8080/employee
+Content-Type: application/json
+
+{
+  "id": "4",
+  "firstName": "Test4",
+  "lastName": "Test4",
+  "department": "1",
+  "salary": 70000
+}
+
+### Обновление сотрудника
+PUT http://localhost:8080/employee/3
+Content-Type: application/json
+
+{
+  "id": "3",
+  "firstName": "Test3",
+  "lastName": "Test3",
+  "department": "1",
+  "salary": 100000
+}
+
+###Удаление сотрудника
+DELETE http://localhost:8080/employee/4
